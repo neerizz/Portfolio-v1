@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">    <title>Portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper nav-link">
+                    <a href="index.html">Home</a>
+                </div>  
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div>    
+            
+            <div class="right-side">
+                <div class="brand">
+                    <div>NIRAJ RATNAWAT</div>
+                </div>
+            </div>
+        </div>
+        
+    <div class="content-wrapper">
+        <div class="portfolio-items-wrapper">
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-bg" style="background-image: url(images/blocker.jpg)">
+                    
+                </div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/blocker.png" style="width:140px; padding-left:115px; padding-right: 115px;" alt="">
+                    </div>
+                    <div class="subtitle">
+                        Website Blocker built using python
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-bg" style="background-image: url(images/smartdictionary.jpg)">
+                    
+                </div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/dictionary.png" style="width:140px; padding-left:125px; padding-right: 105px;" alt="">
+                    </div>
+                    <div class="subtitle">
+                        A smart dictionary built using python 
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-bg" style="background-image: url(images/cipher.jpg)">
+                    
+                </div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/cipher.png" style="width:140px; padding-left:125px; padding-right: 105px;" alt="">
+                    </div>
+                    <div class="subtitle">
+                        A cipher generator and breaker program written in C++
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-bg" style="background-image: url(images/spaceinvader.jpg)">
+                    
+                </div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/space.png" style="width:140px; padding-left:125px; padding-right: 105px;" alt="">
+                    </div>
+                    <div class="subtitle">
+                        Classic Space Invaders game built using pygame
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-bg" style="background-image: url(images/sudoku.jpg)">
+                    
+                </div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/sudoku.png" style="width:140px; padding-left:115px; padding-right: 115px; padding-top:30px;" alt="">
+                    </div>
+                    <div class="subtitle">
+                        Sudoku solver program using backtracking algorithm written in C++
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-bg" style="background-image: url(images/fire.jpg)">
+                    
+                </div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/mine.png"  style="width:140px; padding-left:115px; padding-right: 115px; padding-top:30px;" alt="">
+                    </div>
+                    <div class="subtitle">
+                        Minesweeper game implemented using recursion in C++
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-bg" style="background-image: url(images/textanalyzer.jpg)">
+                    
+                </div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/crondose.png" style="width:140px; padding-left:115px; padding-right: 115px; padding-top:30px;" alt="">
+                    </div>
+                    <div class="subtitle">
+                        Text analyzer built in python 
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-bg" style="background-image: url(images/snake.jpg)">
+                    
+                </div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/snake.png" style="width:140px; padding-left:115px; padding-right: 115px; padding-top:30px;" alt="">
+                    </div>
+                    <div class="subtitle">
+                        Snake Lite - Classic snake game inplemented using pygame
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-bg" style="background-image: url(images/wa.jpg)">
+                    
+                </div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/wa.png" style="width:140px; padding-left:115px; padding-right: 115px; padding-top:30px;" alt="">
+                    </div>
+                    <div class="subtitle">
+                        Automated whatsapp messenger using python
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+          
+    </div>
+</body>
+<script>
+        const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            console.log();
+            portfolioItem.childNodes[1].classList.remove('img-brighten')
+            portfolioItem.childNodes[1].classList.add('img-darken')
+        })
+        portfolioItem.addEventListener('mouseout', () => {
+            console.log();
+            portfolioItem.childNodes[1].classList.add('img-brighten')
+            portfolioItem.childNodes[1].classList.remove('img-darken')
+        })
+    })
+</script>
+</html>
